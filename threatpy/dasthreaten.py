@@ -69,7 +69,9 @@ class get_das_Threaten():
                 
                 
 if __name__ == '__main__':
-    path = r'./time/dasthreattime.txt'
+    import os
+    path = os.path.abspath(os.path.dirname(os.getcwd()))
+    path = path + r'/time/dasthreattime.txt'
     with open(path, mode = 'r+')  as f:
         lastime_str = f.readline().strip()
     get_das_Threaten(lastime_str, path)

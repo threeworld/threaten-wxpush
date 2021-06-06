@@ -6,9 +6,23 @@
 ## 脚本架构
 
 ```
+│   README.md
+|   start.sh        # 设置定时运行的脚本
+├───threatpy
+│   │   alithreaten.py
+│   │   cert360threaten.py
+│   │   config.py
+│   │   dasthreaten.py
+│   │   init_time.py
+│   │   txthreaten.py
+│   │   __init__.py
+│   │
+└───time
+        alithreattime.txt
+        cert360time.txt
+        dasthreattime.txt
+        txthreattime.txt
 ```
-
-
 
 ## 使用说明
 

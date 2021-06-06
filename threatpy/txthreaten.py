@@ -94,8 +94,9 @@ class get_tx_Threaten():
         
         
 if __name__ == '__main__':
-    
-    path = r'./time/txthreattime.txt'
+    import os
+    path = os.path.abspath(os.path.dirname(os.getcwd()))
+    path = path + r'/time/txthreattime.txt'
     with open(path, mode = 'r+')  as f:
         lastime_str = f.readline().strip()
     get_tx_Threaten(lastime_str, path)

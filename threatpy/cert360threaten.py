@@ -61,9 +61,9 @@ class get_360_Threaten():
             f.write(nowtime_str)
         
 if __name__ == '__main__':
-    # lastime = datetime.now()
-    # lastime_str = lastime.strftime("%Y-%m-%d %H:%M:%S")
-    path = r'./time/cert360time.txt'
+    import os
+    path = os.path.abspath(os.path.dirname(os.getcwd()))
+    path = path + r'/time/cert360time.txt'
     with open(path, mode = 'r+') as f:
         lastime_str = f.readline()
     get_360_Threaten(lastime_str, path)
